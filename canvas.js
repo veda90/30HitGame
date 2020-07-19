@@ -141,7 +141,7 @@ function drawMap() {
 }
 let reqToken;
 //----------------------------------------------------
-//Main functin which runs the game
+//    ---- Main functin which runs the game -----
 //---------------------------------------------------
 function update() {
     ctx.clearRect(0, 0, c.width, c.height);
