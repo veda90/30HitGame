@@ -106,6 +106,9 @@ function paint(e) {
     ctx.clearRect(0, 0, c.width, c.height);
     drawMap();
     drawCircle();
+    ctx.setLineDash([4, 16]);
+    ctx.strokeStyle = "red";
+    ctx.lineDashOffset = 4;
     ctx.lineWidth = 1;
     ctx.lineCap = "round";
     const rect = c.getBoundingClientRect();
@@ -132,7 +135,7 @@ c.addEventListener("mousedown", startPosition);
 c.addEventListener("mouseup", endPosition);
 /* Function to draw map which includes all the rectangles which will act as obstacles */
 function drawMap() {
-    //Fetch all the rectangles from array and draw it on canvas
+    //Fetch all the rectangles from array and draw it on canvas   
     rectArr.forEach(element => {
         //draw fill rectangle
         ctx.fillStyle = element.color;
