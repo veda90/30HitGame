@@ -3,7 +3,7 @@
     "short_name": "30hit",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#FFE9D2",
+    "background_color": "#143250",
     "theme_color": "#143250",
     "orientation": "portrait-primary"
 }
