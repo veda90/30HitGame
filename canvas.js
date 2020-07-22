@@ -130,7 +130,13 @@ function paint(e) {
     circle.dy = unitY - 480;
     ctx.stroke();
 }
-c.addEventListener("mousemove", paint);
+document.addEventListener("deviceready", init, false);
+function init() {
+    c.addEventListener("touchstart", startPosition, false);
+    c.addEventListener("touchend", endPosition, false);
+    c.addEventListener("touchmove", paint, false);
+}
+c.addEventListener("touchmove", paint);
 c.addEventListener("mousedown", startPosition);
 c.addEventListener("mouseup", endPosition);
 /* Function to draw map which includes all the rectangles which will act as obstacles */
