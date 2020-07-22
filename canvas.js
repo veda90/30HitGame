@@ -130,9 +130,13 @@ function paint(e) {
     circle.dy = unitY - 480;
     ctx.stroke();
 }
-c.addEventListener("touchstart", startPosition, false);
-c.addEventListener("touchend", endPosition, false);
-c.addEventListener("touchmove", paint, false);
+//Adding touch event listners
+function startup() {
+    c.addEventListener("touchstart", startPosition, false);
+    c.addEventListener("touchend", endPosition, false);
+    c.addEventListener("touchmove", paint, false);
+}
+document.addEventListener("DOMContentLoaded", startup);
 c.addEventListener("mousemove", paint);
 c.addEventListener("mousedown", startPosition);
 c.addEventListener("mouseup", endPosition);
