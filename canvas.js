@@ -132,9 +132,9 @@ function paint(e) {
 }
 //Adding touch event listners
 function startup() {
-    c.addEventListener("touchstart", startPosition, false);
-    c.addEventListener("touchend", endPosition, false);
-    c.addEventListener("touchmove", paint, false);
+    c.addEventListener("touchstart", startPosition, true);
+    c.addEventListener("touchend", endPosition, true);
+    c.addEventListener("touchmove", paint, true);
 }
 document.addEventListener("DOMContentLoaded", startup);
 c.addEventListener("mousemove", paint);
