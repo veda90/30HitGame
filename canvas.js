@@ -107,7 +107,7 @@ function paint(e) {
     drawMap();
     drawCircle();
     ctx.setLineDash([4, 16]);
-    ctx.strokeStyle = "red";
+    ctx.strokeStyle = "blue";
     ctx.lineDashOffset = 4;
     ctx.lineWidth = 1;
     ctx.lineCap = "round";
