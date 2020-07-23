@@ -76,6 +76,7 @@ let rect9 = new Rectangle(520, 430, 150, 30, 'gray');
 let rect10 = new Rectangle(670, 400, 30, 60, 'gray');
 let rect11 = new Rectangle(550, 365, 40, 40, 'red');
 let rect12 = new Rectangle(500, 100, 80, 80, 'blue');
+//Array to store all rectangles
 let rectArr = [rect1, rect2, rect3, rect4, rect5, rect6, rect7, rect8, rect9, rect10, rect11, rect12];
 function drawCircle() {
     ctx.beginPath();
