@@ -81,7 +81,7 @@ let rectArr = [rect1, rect2, rect3, rect4, rect5, rect6, rect7, rect8, rect9, re
 function drawCircle() {
     ctx.beginPath();
     ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
-    ctx.fillStyle = 'purple';
+    ctx.fillStyle = 'red';
     ctx.fill();
 }
 //Fetch all the rectangles from array and draw it on canvas
